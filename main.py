@@ -1,12 +1,16 @@
+#Importar librerias y archivos necesarios
+
 import pygame
 import constantes
 from personaje import Personaje
+
+#Iniciar librerias y crear ventana
 
 pygame.init()
 
 window= pygame.display.set_mode((constantes.ANCHO_SCREEN,
                                  constantes.ALTO_SCREEN))
-pygame.display.set_caption("Juego GOD")
+pygame.display.set_caption("Legacy Of Time: A Historic RPG")
 
 jugador= Personaje(250,350)
 
@@ -15,7 +19,6 @@ mover_abajo= False
 mover_izquierda= False
 mover_derecha= False
 
- 
 reloj= pygame.time.Clock()
 
 run = True 
